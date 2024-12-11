@@ -1,0 +1,170 @@
+@import url(https://fonts.google.com/specimen/Poppins);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+body{
+    background-color: var(--Very-Light-Gray);
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+header{
+    display: flex;
+    text-align: center;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+header h1:nth-child(1){
+    font-weight: 100;
+    color: var(--Grayish-Blue);
+}
+header h1:nth-child(2){
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+}
+header p{
+    max-width: 570px;
+    padding: 1rem;
+    color: var(--Grayish-Blue);
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.9rem;
+  /* padding: 0rem 8rem 0rem 8rem; */
+}
+.supervisor{
+    margin-top: 6rem;
+    padding: 1.5rem;
+    width: 23rem;
+    height: 16rem;
+    margin-left: 11rem;
+    border-radius: 5px 5px 0 0;
+    border-top: 5px solid var(--Cyan);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+   
+}
+.supervisor>h1{
+    font-size: 18px;
+    padding-bottom: 0.8rem;
+    color: var(--Very-Dark-Blue);
+}
+.supervisor>p{
+    font-size: 13px;
+    max-width: 15rem;
+    color: var(--Grayish-Blue);
+}
+.supervisor>img{
+    float: right;
+    margin-top: 3rem;
+}
+.calculator{
+    margin-top: 6rem;
+    padding: 1.5rem;
+    width: 23rem;
+    height: 16rem;
+    margin-right: 11rem;
+    border-radius: 5px 5px 0 0;
+    border-top: 5px solid var(--Blue);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.calculator>h1{
+    font-size: 18px;
+    padding-bottom: 0.8rem;
+    color: var(--Very-Dark-Blue);
+}
+.calculator>p{
+    font-size: 13px;
+    max-width: 15rem;
+    color: var(--Grayish-Blue);
+}
+.calculator>img{
+    float: right;
+    margin-top: 3rem;
+}
+.team-builder{
+    padding: 1.5rem;
+    width: 23rem;
+    height: 16rem;
+    border-radius: 5px 5px 0 0;
+    border-top: 5px solid var(--Red);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.team-builder>h1{
+    font-size: 18px;
+    padding-bottom: 0.8rem;
+    color: var(--Very-Dark-Blue);
+}
+.team-builder>p{
+    font-size: 13px;
+    max-width: 16rem;
+    color: var(--Grayish-Blue);
+}
+.team-builder>img{
+    float: right;
+    margin-top: 3rem;
+}
+.karma{
+    margin-top: 1rem;
+    padding: 1.5rem;
+    width: 23rem;
+    height: 14rem;
+    border-radius: 5px 5px 0 0;
+    border-top: 5px solid var(--Orange);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.karma>h1{
+    font-size: 18px;
+    padding-bottom: 0.8rem;
+    color: var(--Very-Dark-Blue);
+}
+.karma>p{
+    font-size: 13px;
+    max-width: 16rem;
+    color: var(--Grayish-Blue);
+}
+.karma>img{
+    float: right;
+    margin-top: 1rem;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media (max-width: 676px) {
+    body {
+        padding: 1rem; /* Add padding to prevent content from touching edges */
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* Single-column layout */
+        gap: 1rem; /* Reduce the gap between items */
+        padding: 0; /* Remove horizontal padding for smaller screens */
+    }
+
+    .supervisor,
+    .calculator,
+    .team-builder,
+    .karma {
+        width: 100%; /* Ensure the cards take full width */
+        margin: 0 auto; /* Center the cards */
+    }
+
+    header p {
+        font-size: 14px; /* Reduce text size for readability */
+        padding: 0.5rem;
+    }
+}
